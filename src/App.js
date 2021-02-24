@@ -1,8 +1,11 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
-import Login from './pages/BookSearch/BookSearch';
-import FormCreate from './pages/FormCreate/FormCreate';
 
+
+import Login from './pages/loginSignup/loginsignup';
+import Haver from './pages/haverkneset/haverkneset';
+import ForgetPassword from './pages/loginSignup/forgetPassword';
+import ResetPassword from './pages/resetPassword/resetpassword';
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,8 +32,15 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/form-create">
-            <FormCreate />
+          <Route path="/haverkneset">
+            <Haver />
+          </Route>
+          <Route path="/resetpassword">
+
+            <ResetPassword />
+          </Route>
+          <Route path="/forgetpassword">
+            <ForgetPassword/>
           </Route>
           <Route path="/main">
 
